@@ -1,0 +1,6 @@
+.idea/
+venv/
+*.iml
+/jmeter.log
+/test_slow_endpoint.jtl
+/test_slow_endpoint-0_to_15qps_in_5qps_increments.csv
