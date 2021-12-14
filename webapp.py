@@ -1,7 +1,7 @@
 import time
 from datetime import datetime
 
-from flask import Flask
+from flask import Flask, request
 from flask_script import Manager
 
 
@@ -24,6 +24,14 @@ def create_app():
             result += '{} - {}^2 = {}\n'.format(datetime.now(), x, get_pow_2(x))
         result += '{} - end\n'.format(datetime.now())
         return result
+
+    # Sample endpoint w/ some parameters
+    @app.route('/params')
+    def params():
+        """ Just a test endpoint - should accept 'ldap' parameter."""
+        ldap = request.args.get('ldap')
+
+        return f'Computing some stuff for {ldap}...\n'
 
     return app
 

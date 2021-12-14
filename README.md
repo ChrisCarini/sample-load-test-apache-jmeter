@@ -12,7 +12,7 @@ To get started, simply:
     git clone git@github.com:ChrisCarini/sample-load-test-apache-jmeter.git
     cd sample-load-test-apache-jmeter
     source setup.sh
-    gunicorn -w 8 -b 127.0.0.1:5000 "webapp:create_app()"
+    gunicorn -w 8 -b 127.0.0.1:5000 "webapp:create_app()" --access-logfile -
     ```
 1) Download Apache JMeter (_as of publishing, version 5.4.1 is the latest - this sample assumes you are using that
    version._)
