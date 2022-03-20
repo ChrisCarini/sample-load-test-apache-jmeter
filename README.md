@@ -49,3 +49,13 @@ To get started, simply:
       recommend reading this to identify how many threads you should configure!
 
 [1]: https://jmeter-plugins.org/wiki/ThroughputShapingTimer/#How-Many-Threads-I-Need-To-Produce-Desired-RPS
+
+#### Parameterization / Dynamic URLs
+
+* https://stackoverflow.com/questions/16854986/jmeter-testing-multiple-urls
+* https://sqa.stackexchange.com/questions/20831/how-to-load-100-urls-as-http-request-in-jmeter
+* https://www.blazemeter.com/blog/jmeter-parameterization-the-complete-guide
+* https://www.blazemeter.com/blog/csv-data-set-config-in-sharing-mode-made-easy
+* https://www.linkedin.com/pulse/apache-jmeter-basics-common-errors-issues-best-practices-prasad/
+* https://jmeter.apache.org/usermanual/jmeter_distributed_testing_step_by_step.html
+* https://jmeter.apache.org/usermanual/best-practices.html
