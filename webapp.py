@@ -8,7 +8,7 @@ def create_app() -> Flask:
     # Create and configure the application instance
     app = Flask(__name__)
 
-    # Sample endpoint w/ some artificial latency added
+    # Sample endpoint w/o artificial latency added
     @app.route('/fast')
     def fast():
         """ Just a test endpoint - should be fast. """
