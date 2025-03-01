@@ -2,10 +2,9 @@ import time
 from datetime import datetime
 
 from flask import Flask, request
-from flask_script import Manager
 
 
-def create_app():
+def create_app() -> Flask:
     # Create and configure the application instance
     app = Flask(__name__)
 
@@ -51,6 +50,4 @@ def pow_wrapper(num, power):
 
 
 if __name__ == '__main__':
-    app = create_app()
-    manager = Manager(app)
-    manager.run()
+    create_app().run()
