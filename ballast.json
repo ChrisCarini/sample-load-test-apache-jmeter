@@ -1,0 +1,28 @@
+{
+  "endpoints": [
+    {
+      "name": "GET test - fast",
+      "url":"http://localhost:5000/fast",
+      "method": "GET",
+      "concurrent_requests": 8,
+      "cycles": 10,
+      "threshold": 100,
+      "expected_status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    },
+    {
+      "name": "GET test - slow",
+      "url":"http://localhost:5000/slow",
+      "method": "GET",
+      "concurrent_requests": 8,
+      "cycles": 10,
+      "threshold": 100,
+      "expected_status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    }
+  ]
+}

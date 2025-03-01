@@ -1,0 +1,47 @@
+[
+  {
+    "tests": [
+      {
+        "success": true,
+        "within_threshold": true,
+        "expected": {
+          "body": null,
+          "status_code": true,
+          "headers": null
+        },
+        "stats": {
+          "average_response_time": 5.0,
+          "min_response_time": 2.0,
+          "max_response_time": 20.0
+        },
+        "config": {
+          "num_cycles": 10,
+          "num_concurrent_requests": 5,
+          "endpoint_name": "GET test - fast",
+          "endpoint_url": "http://localhost:5000/fast"
+        }
+      },
+      {
+        "success": true,
+        "within_threshold": true,
+        "expected": {
+          "body": null,
+          "status_code": true,
+          "headers": null
+        },
+        "stats": {
+          "average_response_time": 5047.0,
+          "min_response_time": 5041.0,
+          "max_response_time": 5073.0
+        },
+        "config": {
+          "num_cycles": 10,
+          "num_concurrent_requests": 5,
+          "endpoint_name": "GET test - slow",
+          "endpoint_url": "http://localhost:5000/slow"
+        }
+      }
+    ],
+    "timestamp": 1740833032
+  }
+]
